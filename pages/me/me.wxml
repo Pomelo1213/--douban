@@ -1,0 +1,7 @@
+
+<view class="container">
+  <view class="title">About[Pomelo1213]</view>
+  <view class="images">
+    <image mode="espectFill" src="https://i.loli.net/2018/03/27/5aba3ab32affa.jpg"></image>
+  </view>
+</view>

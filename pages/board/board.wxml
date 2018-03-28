@@ -1,0 +1,41 @@
+
+<view class="container">
+
+  <view class="topSlide">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500" indicator-color="rgb(240,240,240)">
+      <swiper-item wx:for="{{boards[0].subjects}}">
+        <image src="{{item.images.large}}" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="listSlide">
+    <view class="listSlideContent">
+      <block wx:for="{{boards}}" wx:key="key" wx:index="index">
+        <view class="slideItem">
+
+          <navigator url="../list/list?type={{item.key}}" hover-class="none" class="listHeader">
+            <view class="listTitle"><text>{{item.title}}</text></view>
+            <view class="listArrow"><image src="../../images/arrowright.png"></image></view>
+          </navigator>
+
+          <scroll-view class="listBody" scroll-x="true">
+            <view class="inner">
+              <block  wx:for="{{item.subjects}}" wx:key="id">
+                <navigator hover-class="none" url="../profile/profile?id={{item.id}}">
+                  <view class="inner-movie">
+                    <image src="{{item.images.large}}" mode="aspectFill"></image>
+                    <text>{{item.title}}</text>
+                  </view>                
+                </navigator>
+
+              </block>
+            </view>
+          </scroll-view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

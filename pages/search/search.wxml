@@ -1,0 +1,11 @@
+<import src="../common/commonList" />
+
+<view class="container">
+  <view class="search">
+    <input placeholder="在此输入内容" focus="true" bindchange="handleSearch" />
+  </view>
+
+  <view class="tempContent">
+    <template is="movieList" data="{{movies, hasMore}}" />
+  </view>
+</view>

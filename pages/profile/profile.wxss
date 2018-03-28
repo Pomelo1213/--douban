@@ -1,0 +1,54 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.back{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .2;
+}
+
+.font{
+  display: flex;
+  flex-direction: column;
+}
+
+.font image{
+  width: 100%;
+  height: 800rpx;
+  margin: 20rpx auto;
+}
+
+.title{
+  text-align: center;
+}
+
+.info{
+  margin-left: 14%;
+  font-size: 25rpx;
+  color: rgb(136,136,136);
+  width: 75%;
+}
+
+.info view{
+  margin: 10rpx 0;
+}
+
+.intro{
+  margin-left: 10%;
+  margin-top: 20rpx;
+}
+
+.intro view:nth-child(2){
+  width: 78%;
+  color: #666;
+  font-size: 25rpx;
+  padding: 20rpx 30rpx;
+  text-align: justify;
+}
+
+
+

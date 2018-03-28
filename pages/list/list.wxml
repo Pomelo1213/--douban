@@ -1,0 +1,5 @@
+<import src="../common/commonList" />
+
+<view class="container">
+  <template is="movieList" data="{{movies, hasMore}}"></template>
+</view>

@@ -1,0 +1,14 @@
+.title{
+  font-size: 50rpx;
+  color: rgb(135,135,135);
+  padding: 30rpx 0;
+  margin: 30rpx 0;
+  text-align: center;
+}
+
+.images image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

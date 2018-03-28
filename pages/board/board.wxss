@@ -1,0 +1,70 @@
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(240,240,240);
+}
+
+.topSlide{
+  height: 50%;
+}
+
+.swiper{
+  height: 100%;
+}
+
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+.listSlide{
+  background-color: rgb(240,240,240);
+}
+
+.slideItem{
+  margin: 20rpx 0;
+  background-color: white;
+  padding: 20rpx 0;
+}
+
+.listHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rpx;
+}
+
+.listHeader .listTitle{
+  font-size: 25rpx;
+  width: 50%;
+}
+
+.listArrow image{
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.inner{
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-movie{
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+  margin: 10rpx;
+  
+}
+
+.inner-movie image{
+  width: 180rpx;
+  height: 250rpx;
+}
+
+.inner-movie text{
+  font-size: 20rpx;
+  text-align: center;
+}

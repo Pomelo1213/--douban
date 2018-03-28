@@ -1,0 +1,84 @@
+.content{
+  border-bottom: 1rpx solid rgb(230,230,230);
+  display: flex;
+  flex-direction: row;
+  padding-top: 15rpx;
+  padding-bottom: 5rpx;
+}
+
+.content .image image{
+  width: 128rpx;
+  height: 168rpx;
+  margin: 0 20rpx;
+}
+
+.content .info{
+
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .info .infoTitle{
+  font-size: 32rpx;
+  margin-left: 10rpx;
+}
+
+.content .info .infoEnTitle{
+  font-size: 25rpx;
+  color: rgb(220,220,220);
+}
+
+.content .info .infoPerson{
+  font-size: 25rpx;
+  color: #aaa;
+}
+
+.infoEnTitle, .infoPerson{
+  margin: 10rpx;
+}
+
+.point{
+  margin-right: 20rpx;
+  width: 40rpx;
+}
+
+.point text{
+  background-color: rgb(248, 111, 89);
+  border-radius: 15rpx;
+  color: white;
+  font-size: 25rpx;
+  padding: 12rpx;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.tips{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  padding: 30rpx 0;
+}
+
+.tips image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.tips text{
+  margin-left: 10rpx;
+  color: rgb(200,200,200);
+}
+
+.unLine{
+  text-align: center;
+  padding: 35rpx 0;
+}
+
+.unLine text{
+  font-size: 30rpx;
+  color: rgb(200,200,200);
+}

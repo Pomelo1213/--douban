@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="back" src="{{movie.images.large}}" mode="aspectFill"></image>
+
+  <view class="font">
+    <image src="{{movie.images.medium}}" mode="aspectFit"></image>
+    <view class="infoWrap">
+      <view class="title">{{movie.title}}</view>
+      <view class="info">
+        <view>评分: {{movie.rating.average}}</view>
+        <view>导演: {{movie.directors[0].name}}</view>
+        <view>主演: <block wx:for="{{movie.casts}}"> {{item.name}} </block></view>
+      </view>
+    </view>
+    <view class="intro">
+      <view>摘要：</view>
+      <view>{{movie.summary}}</view>
+    </view>
+  </view>
+
+</view>

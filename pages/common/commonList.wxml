@@ -1,0 +1,33 @@
+
+<template name="movieContent">
+  <navigator hover-class="none" url="../profile/profile?id={{item.id}}">
+    <view class="content">
+      <view class="image">
+        <image src="{{item.images.small}}" mode="aspectFit"></image>
+      </view>
+      <view class="info">
+        <view class="infoTitle">{{item.title}}</view>
+        <view class="infoEnTitle">{{item.original_title}}</view>
+        <view class="infoPerson">{{item.directors[0].name}}</view>
+      </view>
+      <view class="point"><text>{{item.rating.average}}</text></view>
+
+    </view>
+  </navigator>
+</template>
+
+
+<template name="movieList">
+
+  <template is="movieContent" data="{{item}}" wx:for="{{movies}}"/>
+
+  <view class="tips" wx:if="{{hasMore}}">
+      <image src="../../images/loading.gif" mode="aspectFill"></image>
+      <text>努力加载中...</text>
+  </view>
+  <view class="unLine" wx:else>
+      <text>---我也是有底线的---</text>
+  </view>
+  
+</template>
+
